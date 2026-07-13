@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>블록 세계 - 간단한 마인크래프트</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1 class="logo">블록 세계</h1>
+    <p class="tagline">브라우저에서 즐기는 미니 복셀 샌드박스</p>
+  </header>
+
+  <main class="stage">
+    <div id="game-container">
+      <div id="canvas-holder"></div>
+
+      <div class="hud hud-top">
+        <div class="hint-box">
+          <span><b>WASD</b> 이동</span>
+          <span><b>마우스</b> 시선</span>
+          <span><b>Space / Shift</b> 위 · 아래</span>
+          <span><b>좌클릭</b> 파괴</span>
+          <span><b>우클릭</b> 설치</span>
+          <span><b>1-5</b> 블록 선택</span>
+        </div>
+      </div>
+
+      <div class="crosshair">
+        <span class="crosshair-h"></span>
+        <span class="crosshair-v"></span>
+      </div>
+
+      <div id="hotbar" class="hotbar"></div>
+
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <p class="overlay-title">클릭해서 시작하기</p>
+          <p class="overlay-sub">화면을 클릭하면 마우스가 잠기고 게임을 조작할 수 있어요</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Three.js로 만든 간단한 복셀 샌드박스 데모</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
